@@ -1,0 +1,21 @@
+{
+  "name": "chatroom",
+  "version": "1.0.0",
+  "description": "In this project, a real-time chat application has been developed which will run on local machine.\r The front-end webpage will prompt the user for their name to keep track of who is sending the messages. \r This page can be opened in as many windows as the user wants. If a message is sent from one window, it will be displayed in every windows. \r So, it is just like a real-time web-page opened in multiple clients’ browser which are connected to a common server, i.e, localhost.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./app.js --exec babel-node -e js",
+    "dev": "nodemon ./app.js --exec babel-node -e js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19",
+    "socket.io": "^2.5.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}
